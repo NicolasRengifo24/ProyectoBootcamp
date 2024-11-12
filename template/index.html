@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleindex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    
+    <title>WebFood</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.webp" alt="Logo WebFood">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    
+                    <li><a href="#menu">Carnivoras</li>
+                    <li><a href="#menu">Herbivoras</a></li>
+                    <li><a href="#menu">Algo Nuevo</a></li>
+                    <li><a href="#menu">Bebidas</a></li>
+                    <li><a href="#menu">Fries</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="iconos" >
+                <a href="#pedidoForm" class="carro"><img src="./img/shopping_cart_82dp_EFEFEF_FILL0_wght400_GRAD0_opsz48.png" alt="carrito"></i></a>
+                <span class="contador">0</span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="home">
+        <div>
+            <h1 class="titulo">WebFood</h1>
+        </div>
+        </div>
+        <div class="boton-ordenar">
+            <h3 class="fade-in">COMIENZA A ORDENAR</h3>
+            <a href="#menu" class="fade-in">CLICK AQUI <span><i class="fa-solid fa-arrow-right"></i></span></a>
+    </section>
+    <section id="menu" >
+        <h1>Menu</h1>
+        <div class="card-container"  >
+            <div class="card" onclick="selectProduct('Carnivora XXL', '18000')">
+                <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://png.pngtree.com/png-clipart/20230520/original/pngtree-beef-burger-png-image_9165585.png" alt="Computer Accessories">
+                    <h3>Carnivora XXL</h3>
+                    <h2>18000$</h2>
+                   
+                </div>
+            <div class="card-back">
+                <h3>Carnivora XXL</h3>
+                <p>300 Gr de carne artesanal</p>
+                <p>Pan Arabe Artesanal</p>
+                <p>Vegetales Organicos</p>
+                
+            </div>
+            </div>
+            </div>
+            <div class="card2"  onclick="selectProduct('Hamburguesa vegana', '20000')">
+                <div class="card-inner2">
+                    <div class="card-front2">
+                        <img src="https://www.vitamixespana.com/recetas/wp-content/uploads/2020/04/hamburguesa-vegana-de-arroz-y-calabacin-des-1.jpg" alt="Women">
+                        <h3>HAMBURGUESA vegana</h3>
+                        <h2>20000$</h2>
+                    </div>
+                    <div class="card-back2">
+                            <h3>Vegan XL</h3>
+                            <p>Carne Artesanal de lentejas</p>
+                            <p>tomates, lechuga, mayonesa, ketchup, pepinillos y aros de cebolla</p>
+                            <p>Todas las salsas de la casa que quieras</p>
+                            
+                    </div>
+                </div>
+                </div>
+            <div class="card3"  onclick="selectProduct('Algo Nuevo', '25000')">
+                <div class="card-inner3">>
+                <div class="card-inner3">
+                    <div class="card-front3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZ5xSDdQi5B5TLGkCpwfM-zf2ooMtGwZpmQ&s" alt="Winter Essentials">
+                        <h3>Algo Nuevo </h3>
+                        <h2>25000$</h2>
+                    </div>
+                <div class="card-back3">
+                    <h3>!POR ESTE MES!</h3>
+                    <p>Preparate para probar nuestra Hamburguesa De Patacon</p>
+                    <p>450 Gr de carne artesanal</p>
+                    <p>Patacon Super Crocante</p>
+                    <p>Vegetales Organicos</p>
+                    <p>Salsas De La Casa</p>
+                            
+                </div>
+                </div>
+                </div>
+            </div>
+
+        </section>
+        </section>
+        <section id="adicion">
+        <h1>OTROS</h1>       
+                <div class="card-container4">
+                    <div class="card4"  onclick="selectProduct('Bebidas', '3500')">
+                      <div class="card-inner4">  
+                        <div class="card-front4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wiTfXSFgZsYWsLYJy4aUgBtnD2YL4Al5YA&s" alt="Mysterious House">
+                            <h3>Bebidas</h3>
+                            <H2>3500$</H2>
+                        </div>
+                        <div class="card-back4">
+                            <h3>Jugos Naturales</h3>
+                            <p>Jugo De Mora</p>
+                            <p>Jugo De Maracuya</p>
+                            <p>Gaseosa</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            <div class="card5" onclick="selectProduct('Porcion De Papas', '5000')">
+                    <div class="card-inner2">>
+                   <div class ="card-inner5"> 
+                    <div class="card-front5">
+                        <img src="https://cdn.britannica.com/34/206334-050-7637EB66/French-fries.jpg" alt="fries">
+                        <h3>Porcion De Papas</h3>
+                        <h2>5000$</h2>
+                    </div>
+                    <div class="card-back5">
+                        <h3>Papa Super Crocante</h3>
+                        <p>100 Gr de papa fresca</p>
+                        <p>Salsas De La Casa</p>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+    
+    </section>
+    <section class="formu">
+        <h1>Formulario de Pedido</h1>
+        <form id="pedidoForm">
+            <!-- Producto 1 -->
+                <label for="nombreCli">Nombre Del Cliente</label>
+                <input type="text"  id="nombreCli" name="nombreCli">
+             
+                <label for="idCli">ID Del Cliente</label>
+                <input type="text"  id="idCli" name="idCli" >
+    
+                <label for="correoCli">Correo Del Cliente</label>
+                <input type="text"  id="correoCli" name="correoCli" >
+            
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" readonly>
+            
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" readonly>
+                
+                
+                <button type="submit">Hacer Pedido</button>
+        </form>
+
+            <!-- Lista de productos seleccionados -->
+            <div id="productosSeleccionados">
+                <h3>Productos seleccionados</h3>
+                <ul id="listaProductos">
+                    <!-- Productos seleccionados aparecerán aquí -->
+                </ul>
+            </div>
+
+           <div class="enviar">
+               
+            </div>
+        </form>
+    </section>
+
+</body>
+<script src="script.js" defer></script>
+</html>
